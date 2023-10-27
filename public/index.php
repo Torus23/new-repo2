@@ -10,7 +10,10 @@
 <body>
 <nav><h1>Logan's Woolworths</h1></nav>
 <?php
-    require('../dbconfig.php');
+    $servername = "db-php.mysql.database.azure.com";
+    $username = "adminlogan";
+    $password = "Secret123456";
+    $db_name = "shopping";
     $conn = mysqli_init();
     
     mysqli_real_connect($conn, $servername, $username, $password, $db_name, 3306);
